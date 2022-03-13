@@ -55,6 +55,7 @@ mkdir "%OneDrive%\PCSync"
 
 
 robocopy "%userprofile%\Desktop" "%onedrive%\PCSync\Desktop" /E /MT:16 /move
+robocopy "%onedrive%\Desktop" "%onedrive%\PCSync\Desktop" /E /MT:16 /move
 mklink /J "%userprofile%\Desktop" "%onedrive%\PCSync\Desktop"
 
 robocopy "%userprofile%\Music" "%onedrive%\PCSync\Music" /E /MT:16 /move
