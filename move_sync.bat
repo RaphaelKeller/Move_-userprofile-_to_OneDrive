@@ -49,26 +49,17 @@
 ::written by Raphael Keller
 
 
-mkdir "C:\source"
 mkdir "%USERPROFILE%\OneDrive"
 setx OneDrive "%USERPROFILE%\OneDrive"
 mkdir "%OneDrive%\PCSync"
 
-robocopy "C:\source\Scripts" "%onedrive%\Scripts" /E /MT:16 /move
-mklink /J "C:\source\Scripts" "%onedrive%\Scripts"
 
 robocopy "%userprofile%\Desktop" "%onedrive%\PCSync\Desktop" /E /MT:16 /move
 mklink /J "%userprofile%\Desktop" "%onedrive%\PCSync\Desktop"
 
 robocopy "%userprofile%\Music" "%onedrive%\PCSync\Music" /E /MT:16 /move
 
-robocopy "%userprofile%\repos" "%onedrive%\Visual Studio\repos" /MT:16 /E /move
-mklink /J "%userprofile%\repos" "%onedrive%\Visual Studio\repos"
-
 robocopy "%userprofile%\Saved Games" "%onedrive%\PCSync\Saved Games" /MT:16 /E /move
-
-robocopy "%userprofile%\source" "%onedrive%\Visual Studio\source" /E /MT:16 /move
-mklink /J "%userprofile%\source" "%onedrive%\Visual Studio\source"
 
 robocopy "%userprofile%\Videos" "%onedrive%\PCSync\Videos" /E /MT:16 /move
 
