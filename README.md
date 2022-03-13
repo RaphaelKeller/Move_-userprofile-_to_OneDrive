@@ -1,5 +1,5 @@
 # Move_-userprofile-_to_OneDrive
-This Script moves all known Folders to OneDrive and changes the path to the new Folder.
+This script moves all known Folders to OneDrive and changes the path to the new Folder.
 
 You can change the variable PCSync to what you think is best for you. But you have to Change it everywhere in the script since i did not 
 write a variable for it. feel free to do that.
