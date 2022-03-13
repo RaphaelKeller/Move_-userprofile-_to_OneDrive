@@ -1,3 +1,4 @@
+@echo off
 ::@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&#GG#&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 ::@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&#GPYYJYY5PG#&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 ::@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&#G5YYJJJYYYYYYYY5PG#&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -49,9 +50,9 @@
 
 
 mkdir "C:\source"
-mkdir "%Onedrive%\PCSync"
 mkdir "%USERPROFILE%\OneDrive"
-set Onedrive = "%USERPROFILE%\OneDrive"
+setx OneDrive "%USERPROFILE%\OneDrive"
+mkdir "%OneDrive%\PCSync"
 
 robocopy "C:\source\Scripts" "%onedrive%\Scripts" /E /MT:16 /move
 mklink /J "C:\source\Scripts" "%onedrive%\Scripts"
